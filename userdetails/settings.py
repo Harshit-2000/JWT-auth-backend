@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-ifa5@77&!(y@h-4nim+rln2^ywf#db@f!80t7dj^b%lh)g9h0q
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://jwt-token-api-2000.herokuapp.com/',
+ALLOWED_HOSTS = ['jwt-token-api-2000.herokuapp.com/',
                  'http://localhost:8000/']
 
 

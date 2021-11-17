@@ -1,4 +1,3 @@
-from django.contrib.auth import authenticate, login, logout
 from rest_framework.generics import UpdateAPIView
 from rest_framework.generics import DestroyAPIView
 from rest_framework.generics import ListAPIView, RetrieveAPIView
@@ -15,9 +14,14 @@ from rest_framework.exceptions import AuthenticationFailed
 from .serializers import UserSerializer
 import jwt
 from django.conf import settings
+from django.shortcuts import render
 
 # Create your views here.
 base_url = "http://127.0.0.1:8000"
+
+
+def home(request):
+    return render(request, 'home.html')
 
 
 class SignupAPIView(APIView):

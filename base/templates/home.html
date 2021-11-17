@@ -17,14 +17,30 @@
 <body>
     <h1>Endpoints</h1>
     <ul>
-        <li>api/login</li>
-        <li>api/register</li>
-        <li>api/logout</li>
-        <li>api/user</li>
-        <li>api/users</li>
-        <li>api/delete/int:pk</li>
-        <li>api/logout/int:pk</li>
-        <li>api/retrive/int:pk</li>
+        <a href="{% url 'loginAPI' %}">
+            <li>api/login</li>
+        </a>
+        <a href="{% url 'signupAPI' %}">
+            <li>api/register</li>
+        </a>
+        <a href="{% url 'logoutAPI' %}">
+            <li>api/logout</li>
+        </a>
+        <a href="{% url 'userAPI' %}">
+            <li>api/user</li>
+        </a>
+        <a href="{% url 'usersList' %}">
+            <li>api/users</li>
+        </a>
+        <a href="{% url 'delete' %}">
+            <li>api/delete/int:pk</li>
+        </a>
+        <a href="{% url 'update' %}">
+            <li>api/update/int:pk</li>
+        </a>
+        <a href="{% url 'retrive' %}">
+            <li>api/retrive/int:pk</li>
+        </a>
     </ul>
 </body>
 

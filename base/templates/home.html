@@ -32,13 +32,13 @@
         <a href="{% url 'usersList' %}">
             <li>api/users</li>
         </a>
-        <a href="{% url 'delete' %}">
+        <a href="{% url 'delete' 1 %}">
             <li>api/delete/int:pk</li>
         </a>
-        <a href="{% url 'update' %}">
+        <a href="{% url 'update' 1 %}">
             <li>api/update/int:pk</li>
         </a>
-        <a href="{% url 'retrive' %}">
+        <a href="{% url 'retrive' 1 %}">
             <li>api/retrive/int:pk</li>
         </a>
     </ul>
